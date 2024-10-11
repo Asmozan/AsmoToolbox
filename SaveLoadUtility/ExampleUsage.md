@@ -34,9 +34,7 @@ class DeleteSaveButton : MonoBehaviour
 using UnityEngine.UI;
 
 class SaveButton : MonoBehaviour
-{
-	[SerializeField] private PlayerStats _playerStats;
-	
+{	
 	private ISaveLoadUtility _saveLoadUtility;
 	private Button _button;
 	
@@ -64,9 +62,7 @@ class SaveButton : MonoBehaviour
 using UnityEngine.UI;
 
 class LoadButton : MonoBehaviour
-{
-	[SerializeField] private PlayerStats _playerStats;
-	
+{	
 	private ISaveLoadUtility _saveLoadUtility;
 	private Button _button;
 	private Data _data;	
@@ -88,3 +84,4 @@ class LoadButton : MonoBehaviour
 	}
 }
 ```
+---
