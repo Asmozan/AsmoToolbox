@@ -23,7 +23,7 @@ class DeleteSaveButton : MonoBehaviour
 	
 	private void DeleteSave()
 	{
-		_saveLoadUtility.DeleteData(DataKeys.PlayerStats);
+		_saveLoadUtility.DeleteData(DataKeys.ExampleData);
 	}
 }
 ```
@@ -37,7 +37,8 @@ class SaveButton : MonoBehaviour
 {	
 	private ISaveLoadUtility _saveLoadUtility;
 	private Button _button;
-	
+	private Data _data;
+
 	private void Awake()
 	{
 		_saveLoadUtility = new SaveLoadJson(); // or new SaveLoadPlayerPrefs()
@@ -51,7 +52,7 @@ class SaveButton : MonoBehaviour
 	
 	private void Save()
 	{
-		_saveLoadUtility.SaveData(DataKeys.ExampleData);
+		_saveLoadUtility.SaveData(DataKeys.ExampleData, _data);
 	}
 }
 ```
